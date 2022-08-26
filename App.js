@@ -83,7 +83,6 @@ useEffect(() => {
  
    return (
      <View style = {styles.container}>
-     <StatusBar translucent={true}></StatusBar>
          <View style = {styles.dropdownContainerIn}>
            <TextInput
              keyboardType = "number-pad"
@@ -239,7 +238,7 @@ useEffect(() => {
 
  },
  finalRow:{
-  transform: [{translateX: 90},{translateY: -205}],
+  transform: [{translateX: 90},{translateY: -150}],
  },
  numpad:{
   transform: [{translateY: -70}]
@@ -251,7 +250,7 @@ useEffect(() => {
   borderColor: 'black',
   borderWidth: 3,
   borderRadius: 15,
-  transform: [{translateX: 270},{translateY: -620}],
+  transform: [{translateX: 270},{translateY: -510}],
   alignItems: 'center',
   justifyContent: 'center',
  },
