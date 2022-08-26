@@ -9,7 +9,7 @@
 
  import React, {useState, useEffect, useMemo} from 'react';
 
- import {StyleSheet, View, TextInput, Text, TouchableOpacity, FlatList, Image} from 'react-native';
+ import {StyleSheet, View, TextInput, Text, TouchableOpacity, FlatList, Image, StatusBar} from 'react-native';
  import DropDownPicker from 'react-native-dropdown-picker';
  import axios from 'axios'
 
@@ -83,6 +83,7 @@ useEffect(() => {
  
    return (
      <View style = {styles.container}>
+     <StatusBar translucent={true}></StatusBar>
          <View style = {styles.dropdownContainerIn}>
            <TextInput
              keyboardType = "number-pad"
@@ -162,7 +163,7 @@ useEffect(() => {
    backgroundColor: '#123',
    alignItems: 'center',
    justifyContent: 'center',
-   flex: 1
+   flex: 1,
  },
  text:{
    fontSize: 30,
@@ -185,6 +186,7 @@ useEffect(() => {
    flexDirection: 'row',
    transform: [{translateX: 140}, {translateY: 160}],
    marginRight: 20,
+   marginTop: 90
  },
  dropdownContainerOut:{
    flexDirection: 'row',
@@ -234,7 +236,7 @@ useEffect(() => {
 
  },
  finalRow:{
-  transform: [{translateX: 90},{translateY: -150}],
+  transform: [{translateX: 90},{translateY: -205}],
  },
  numpad:{
   transform: [{translateY: -70}]
@@ -246,7 +248,7 @@ useEffect(() => {
   borderColor: 'black',
   borderWidth: 3,
   borderRadius: 15,
-  transform: [{translateX: 270},{translateY: -510}],
+  transform: [{translateX: 270},{translateY: -620}],
   alignItems: 'center',
   justifyContent: 'center',
  },
