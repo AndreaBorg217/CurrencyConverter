@@ -182,11 +182,14 @@ useEffect(() => {
    fontWeight: 'bold',
    color: 'white',
  },
+ dropdownOption:{
+  transform: [{translateX: 140}, {translateY: 160}],
+
+ },
  dropdownContainerIn:{
    flexDirection: 'row',
    transform: [{translateX: 140}, {translateY: 160}],
    marginRight: 20,
-   marginTop: 90
  },
  dropdownContainerOut:{
    flexDirection: 'row',
