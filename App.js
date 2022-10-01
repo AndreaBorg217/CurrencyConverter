@@ -11,6 +11,7 @@
 
  import {StyleSheet, View, TextInput, Text, TouchableOpacity, FlatList, Image, StatusBar} from 'react-native';
  import DropDownPicker from 'react-native-dropdown-picker';
+ import {key} from './sensitive.js'
  import axios from 'axios'
 
 DropDownPicker.setTheme("DARK");
